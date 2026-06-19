@@ -1,15 +1,20 @@
 import { Metadata } from 'next';
+import { getGlobalKeywords } from '@/lib/calculatorData';
 
 export const metadata: Metadata = {
-  title: 'About Us | CalculatorHub',
-  description: 'Learn more about CalculatorHub, our mission to provide free, accurate, and easy-to-use online calculators for everyone.',
+  title: 'About Us | All In One Calculator',
+  description: 'Learn more about All In One Calculator, our mission to provide free, accurate, and easy-to-use online calculators for everyone.',
+  keywords: getGlobalKeywords(),
+  alternates: {
+    canonical: 'https://www.allinonecalculator.fun/about'
+  }
 };
 
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 space-y-12">
       <div className="text-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900">About CalculatorHub</h1>
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900">About All In One Calculator</h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto">
           Free, accurate, and lightning-fast calculations for everyday life.
         </p>
@@ -19,7 +24,7 @@ export default function AboutPage() {
         <section className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
           <p>
-            At CalculatorHub, we believe that complex math shouldn't stand in the way of good decision making. 
+            At All In One Calculator, we believe that complex math shouldn't stand in the way of good decision making. 
             Whether you are trying to figure out your monthly mortgage payments, calculating your ideal daily caloric intake, 
             or just trying to convert kilometers to miles, we want to make it as simple as clicking a button.
           </p>

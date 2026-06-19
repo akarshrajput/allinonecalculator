@@ -1,8 +1,13 @@
 import { Metadata } from 'next';
+import { getGlobalKeywords } from '@/lib/calculatorData';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | All In One Calculator',
   description: 'Read the Terms of Service for All In One Calculator.',
+  keywords: getGlobalKeywords(),
+  alternates: {
+    canonical: 'https://www.allinonecalculator.fun/terms'
+  }
 };
 
 export default function TermsPage() {

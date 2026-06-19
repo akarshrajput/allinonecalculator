@@ -117,7 +117,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: calc.metaTitle,
     description: calc.metaDescription,
     keywords: calc.keywords.join(', '),
-    authors: [{ name: 'CalculatorHub' }],
+    authors: [{ name: 'All In One Calculator' }],
     robots: {
       index: true,
       follow: true,

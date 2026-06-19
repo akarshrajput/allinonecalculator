@@ -63,7 +63,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     "dateModified": post.updatedAt?.toISOString(),
     "author": {
       "@type": "Organization",
-      "name": "CalculatorHub"
+      "name": "All In One Calculator"
     }
   };
 

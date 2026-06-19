@@ -1,8 +1,13 @@
 import { Metadata } from 'next';
+import { getGlobalKeywords } from '@/lib/calculatorData';
 
 export const metadata: Metadata = {
   title: 'Contact Us | All In One Calculator',
   description: 'Get in touch with the All In One Calculator team for support, feedback, or business inquiries.',
+  keywords: getGlobalKeywords(),
+  alternates: {
+    canonical: 'https://www.allinonecalculator.fun/contact'
+  }
 };
 
 export default function ContactPage() {

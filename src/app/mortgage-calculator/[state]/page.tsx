@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: { state: string } }
   const currentYear = new Date().getFullYear();
   
   return {
-    title: `${stateData.name} Mortgage Calculator — ${currentYear} Payment Estimator | CalculatorHub`,
+    title: `${stateData.name} Mortgage Calculator — ${currentYear} Payment Estimator | All In One Calculator`,
     description: `Calculate your ${stateData.name} mortgage payment with local property tax rates. Free ${stateData.name} home loan calculator with full amortization table.`,
     alternates: {
       canonical: `https://www.allinonecalculator.fun/mortgage-calculator/${stateData.slug}`

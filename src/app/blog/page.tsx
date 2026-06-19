@@ -5,9 +5,12 @@ import AdUnit from '@/components/ui/AdUnit';
 import connectToDatabase from '@/lib/mongodb';
 import { BlogPost } from '@/models/BlogPost';
 
+import { getGlobalKeywords } from '@/lib/calculatorData';
+
 export const metadata: Metadata = {
-  title: 'Blog — Guides & Tips | CalculatorHub',
+  title: 'Blog — Guides & Tips | All In One Calculator',
   description: 'Read our latest guides, tips, and tutorials on finance, health, and mathematics.',
+  keywords: getGlobalKeywords(),
   alternates: {
     canonical: 'https://www.allinonecalculator.fun/blog'
   }

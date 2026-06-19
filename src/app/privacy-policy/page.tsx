@@ -1,8 +1,13 @@
 import { Metadata } from 'next';
+import { getGlobalKeywords } from '@/lib/calculatorData';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | All In One Calculator',
   description: 'Read the privacy policy for All In One Calculator to understand how we protect your data.',
+  keywords: getGlobalKeywords(),
+  alternates: {
+    canonical: 'https://www.allinonecalculator.fun/privacy-policy'
+  }
 };
 
 export default function PrivacyPolicyPage() {

@@ -17,10 +17,10 @@ export default function Footer() {
           <div>
             <h3 className="text-xs font-bold text-gray-900 tracking-widest uppercase mb-6">Categories</h3>
             <ul className="space-y-4">
-              <li><Link href="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Finance & Business</Link></li>
-              <li><Link href="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Health & Fitness</Link></li>
-              <li><Link href="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Math & Time</Link></li>
-              <li><Link href="/" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Home & Utility</Link></li>
+              <li><Link href="/calculators/finance" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Finance & Business</Link></li>
+              <li><Link href="/calculators/health" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Health & Fitness</Link></li>
+              <li><Link href="/calculators/math" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Math & Time</Link></li>
+              <li><Link href="/calculators/home" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Home & Utility</Link></li>
             </ul>
           </div>
           <div>

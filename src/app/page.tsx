@@ -1,21 +1,12 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AdUnit from '@/components/ui/AdUnit';
-import { getAllCalculators } from '@/lib/calculatorData';
+import { getAllCalculators, getGlobalKeywords } from '@/lib/calculatorData';
 import { homeFaqs } from '@/lib/faqData';
 import StructuredData, { generateFAQSchema } from '@/components/seo/StructuredData';
 import FAQSection from '@/components/ui/FAQSection';
 
-const calculatorsList = getAllCalculators();
-const homepageKeywords = Array.from(
-  new Set([
-    'all in one calculator',
-    'free online calculators',
-    'online calculators',
-    ...calculatorsList.map(c => c.primaryKeyword),
-    ...calculatorsList.flatMap(c => c.keywords)
-  ])
-);
+const homepageKeywords = getGlobalKeywords();
 
 export const metadata: Metadata = {
   title: 'Free Online Calculators — Finance, Health, Math & More | All In One Calculator',

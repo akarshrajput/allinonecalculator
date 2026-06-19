@@ -921,3 +921,15 @@ export function getCalculatorData(slug: string): CalculatorData | undefined {
 export function getAllCalculators(): CalculatorData[] {
   return CALCULATORS;
 }
+
+export function getGlobalKeywords(): string[] {
+  return Array.from(
+    new Set([
+      'all in one calculator',
+      'free online calculators',
+      'online calculators',
+      ...CALCULATORS.map(c => c.primaryKeyword),
+      ...CALCULATORS.flatMap(c => c.keywords)
+    ])
+  );
+}

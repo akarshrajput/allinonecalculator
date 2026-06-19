@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import AdUnit from '@/components/ui/AdUnit';
-import { getAllCalculators } from '@/lib/calculatorData';
+import { getAllCalculators, getGlobalKeywords } from '@/lib/calculatorData';
 
 const CATEGORIES = [
   { slug: 'finance', name: 'Finance Calculators', description: 'Take control of your finances with our free mortgage, loan, and investment calculators.' },
@@ -19,20 +19,19 @@ export async function generateStaticParams() {
     category: cat.slug,
   }));
 }
-
 export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
   const categoryData = CATEGORIES.find(c => c.slug === params.category);
   if (!categoryData) return {};
   
   return {
-    title: `${categoryData.name} — Free Online Tools | CalculatorHub`,
+    title: `${categoryData.name} — Free Online Tools | All In One Calculator`,
     description: categoryData.description,
+    keywords: getGlobalKeywords(),
     alternates: {
       canonical: `https://www.allinonecalculator.fun/calculators/${categoryData.slug}`
     }
   };
 }
-
 export default function CategoryPage({ params }: { params: { category: string } }) {
   const categoryData = CATEGORIES.find(c => c.slug === params.category);
   if (!categoryData) notFound();
