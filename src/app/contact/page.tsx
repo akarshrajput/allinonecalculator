@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | CalculatorHub',
-  description: 'Get in touch with the CalculatorHub team for support, feedback, or business inquiries.',
+  title: 'Contact Us | All In One Calculator',
+  description: 'Get in touch with the All In One Calculator team for support, feedback, or business inquiries.',
 };
 
 export default function ContactPage() {
@@ -55,7 +55,7 @@ export default function ContactPage() {
       </div>
       
       <div className="text-center text-sm text-gray-500">
-        <p>Prefer email? Reach out directly to <strong>support@calculatorhub.com</strong></p>
+        <p>Prefer email? Reach out directly to <strong>support@allinonecalculator.fun</strong></p>
       </div>
     </div>
   );

@@ -5,9 +5,12 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100 mt-20">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div className="col-span-1 md:col-span-1">
-            <span className="font-display font-bold text-xl text-gray-900 tracking-tight">All In One Calculator</span>
-            <p className="mt-4 text-sm text-gray-500 leading-relaxed">
+          <div className="col-span-1 md:col-span-1 space-y-4">
+            <div className="flex items-center gap-3">
+              <img src="/logo.jpeg" alt="All In One Calculator Logo" className="w-8 h-8 rounded-lg object-contain" />
+              <span className="font-display font-bold text-xl text-gray-900 tracking-tight">All In One Calculator</span>
+            </div>
+            <p className="text-sm text-gray-500 leading-relaxed">
               Fast, accurate, and easy-to-use online calculators for everyday math, health, finance, and more.
             </p>
           </div>

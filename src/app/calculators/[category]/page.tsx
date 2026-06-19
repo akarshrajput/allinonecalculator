@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { category: string 
     title: `${categoryData.name} — Free Online Tools | CalculatorHub`,
     description: categoryData.description,
     alternates: {
-      canonical: `https://calculatorhub.com/calculators/${categoryData.slug}`
+      canonical: `https://www.allinonecalculator.fun/calculators/${categoryData.slug}`
     }
   };
 }
@@ -43,7 +43,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
     <article className="max-w-5xl mx-auto space-y-12">
       <header className="space-y-4 border-b border-border pb-8">
         <Breadcrumb items={[
-          { label: 'Calculators', href: '/calculators' },
+          { label: 'Calculators', href: '/' },
           { label: categoryData.name, href: `/calculators/${categoryData.slug}` }
         ]} />
         <h1 className="text-4xl font-display font-bold text-text-primary">{categoryData.name}</h1>

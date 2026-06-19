@@ -10,6 +10,19 @@ import StructuredData from '@/components/seo/StructuredData';
 
 export const revalidate = 86400; // 24 hours
 
+export async function generateStaticParams() {
+  try {
+    await connectToDatabase();
+    const posts = await BlogPost.find({}).select('slug').lean();
+    return posts.map((post: any) => ({
+      slug: post.slug,
+    }));
+  } catch (err) {
+    console.error('Failed to generate static params for blog posts:', err);
+    return [];
+  }
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   await connectToDatabase();
   const post = await BlogPost.findOne({ slug: params.slug }).lean();
@@ -20,7 +33,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: post.metaTitle,
     description: post.metaDescription,
     alternates: {
-      canonical: `https://calculatorhub.com/blog/${post.slug}`
+      canonical: `https://www.allinonecalculator.fun/blog/${post.slug}`
     },
     openGraph: {
       title: post.metaTitle,
@@ -28,7 +41,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       type: 'article',
       publishedTime: post.publishedAt?.toISOString(),
       modifiedTime: post.updatedAt?.toISOString(),
-      url: `https://calculatorhub.com/blog/${post.slug}`,
+      url: `https://www.allinonecalculator.fun/blog/${post.slug}`,
     }
   };
 }

@@ -126,8 +126,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: calc.ogTitle || calc.title,
       description: calc.ogDescription || calc.metaDescription,
-      url: `https://calculatorhub.com/${calc.slug}`,
-      siteName: 'CalculatorHub',
+      url: `https://www.allinonecalculator.fun/${calc.slug}`,
+      siteName: 'All In One Calculator',
       type: 'website',
       images: [{ url: `/og/${calc.slug}.png`, width: 1200, height: 630 }]
     },
@@ -138,7 +138,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [`/og/${calc.slug}.png`]
     },
     alternates: {
-      canonical: `https://calculatorhub.com/${calc.slug}`,
+      canonical: `https://www.allinonecalculator.fun/${calc.slug}`,
     }
   };
 }
@@ -158,9 +158,9 @@ export default function CalculatorPage({ params }: PageProps) {
   // Schema Generation
   const webAppSchema = generateWebApplicationSchema(calc);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', item: 'https://calculatorhub.com', position: 1 },
-    { name: 'Calculators', item: `https://calculatorhub.com/calculators`, position: 2 },
-    { name: calc.title, item: `https://calculatorhub.com/${calc.slug}`, position: 3 }
+    { name: 'Home', item: 'https://www.allinonecalculator.fun', position: 1 },
+    { name: 'Calculators', item: `https://www.allinonecalculator.fun`, position: 2 },
+    { name: calc.title, item: `https://www.allinonecalculator.fun/${calc.slug}`, position: 3 }
   ]);
   
   // Note: the full FAQ question mapping logic would query DB or use full mock, for now we will stub answers.
@@ -183,7 +183,7 @@ export default function CalculatorPage({ params }: PageProps) {
       <StructuredData data={faqSchema} />
       
       <Breadcrumb items={[
-        { label: 'Calculators', href: '/calculators' },
+        { label: 'Calculators', href: '/' },
         { label: calc.title, href: `/${calc.slug}` }
       ]} />
       

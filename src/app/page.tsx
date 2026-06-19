@@ -2,10 +2,25 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AdUnit from '@/components/ui/AdUnit';
 import { getAllCalculators } from '@/lib/calculatorData';
+import { homeFaqs } from '@/lib/faqData';
+import StructuredData, { generateFAQSchema } from '@/components/seo/StructuredData';
+import FAQSection from '@/components/ui/FAQSection';
+
+const calculatorsList = getAllCalculators();
+const homepageKeywords = Array.from(
+  new Set([
+    'all in one calculator',
+    'free online calculators',
+    'online calculators',
+    ...calculatorsList.map(c => c.primaryKeyword),
+    ...calculatorsList.flatMap(c => c.keywords)
+  ])
+);
 
 export const metadata: Metadata = {
   title: 'Free Online Calculators — Finance, Health, Math & More | All In One Calculator',
   description: 'Free online calculators for mortgage, BMI, loan, percentage, calories and more. Fast, accurate, no sign-up needed.',
+  keywords: homepageKeywords,
 };
 
 export default function HomePage() {
@@ -27,10 +42,10 @@ export default function HomePage() {
     <div className="space-y-16 max-w-7xl mx-auto">
       <section className="text-center space-y-4 pt-16 pb-12">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-text-primary tracking-tight">
-          Free Online Calculators
+          Free Online Calculators & Converters
         </h1>
-        <p className="text-lg text-text-muted max-w-2xl mx-auto font-medium">
-          Fast, accurate tools for finance, health, math, and everyday utility. Completely free, no sign-up required.
+        <p className="text-lg text-text-muted max-w-3xl mx-auto font-medium leading-relaxed">
+          Fast, accurate all-in-one tools for mortgage, loan, BMI, calorie, percentage, and unit conversions. 100% free with no sign-up or registration required.
         </p>
       </section>
 
@@ -90,30 +105,13 @@ export default function HomePage() {
         <AdUnit slot="homepage_bottom" format="rectangle" />
       </div>
 
-      <section className="mt-20 pt-16 border-t border-border prose prose-lg max-w-none text-text-muted">
-        <h2 className="text-3xl font-bold text-text-primary mb-6">The Ultimate All-in-One Calculator</h2>
-        <p>
-          Welcome to the internet's most comprehensive <strong>all in one calculator</strong> platform. Instead of bouncing between dozens of spammy, slow websites to do your daily math, we built a lightning-fast, ad-lite application that houses every tool you could possibly need under one roof. Whether you are searching for an <strong>all-in-one calculator</strong> for complex real estate transactions, or simply need to convert temperatures while cooking, you'll find it here instantly.
-        </p>
+      {/* Intro & FAQ Section */}
+      <div className="mt-20 pt-16 border-t border-border space-y-16">
+        {/* Schema injection */}
+        <StructuredData data={generateFAQSchema(homeFaqs)} />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <div>
-            <h3 className="text-xl font-bold text-text-primary mb-4">Why Use AllInOneCalculator.fun?</h3>
-            <ul className="space-y-2">
-              <li><strong>100% Free Forever:</strong> We never gate our tools behind paywalls or subscriptions.</li>
-              <li><strong>No Sign-Ups:</strong> We respect your privacy. No emails or accounts required to run a calculation.</li>
-              <li><strong>Lightning Fast:</strong> Built on modern web architecture so you get your answers instantly without page reloads.</li>
-              <li><strong>Mobile Optimized:</strong> The perfect <strong>all in one calculator</strong> for your phone browser, designed to feel like a native app.</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-text-primary mb-4">Tools for Every Need</h3>
-            <p>
-              Our growing library contains over 40 highly specialized calculators. From complex financial modeling (mortgage recasting, cap rates, and Etsy seller fees) to health tracking (BMI, body fat, and TDEE), this is your ultimate <strong>multi-purpose calculator</strong> hub. Bookmark this page and never search for another math tool again!
-            </p>
-          </div>
-        </div>
-      </section>
+        <FAQSection faqs={homeFaqs} />
+      </div>
     </div>
   );
 }

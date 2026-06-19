@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | CalculatorHub',
-  description: 'Read the privacy policy for CalculatorHub to understand how we protect your data.',
+  title: 'Privacy Policy | All In One Calculator',
+  description: 'Read the privacy policy for All In One Calculator to understand how we protect your data.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
 
       <div className="text-gray-600 space-y-6 leading-relaxed">
         <p>
-          At CalculatorHub ("we", "our", or "us"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
+          At All In One Calculator ("we", "our", or "us"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
         </p>
 
         <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">1. Information We Do NOT Collect</h3>
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
 
         <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">5. Contact Us</h3>
         <p>
-          If you have any questions about this Privacy Policy, please contact us at <strong>privacy@calculatorhub.com</strong>.
+          If you have any questions about this Privacy Policy, please contact us at <strong>privacy@allinonecalculator.fun</strong>.
         </p>
       </div>
     </div>

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: { state: string } }
     title: `${stateData.name} Mortgage Calculator — ${currentYear} Payment Estimator | CalculatorHub`,
     description: `Calculate your ${stateData.name} mortgage payment with local property tax rates. Free ${stateData.name} home loan calculator with full amortization table.`,
     alternates: {
-      canonical: `https://calculatorhub.com/mortgage-calculator/${stateData.slug}`
+      canonical: `https://www.allinonecalculator.fun/mortgage-calculator/${stateData.slug}`
     }
   };
 }
@@ -39,7 +39,7 @@ export default function StateMortgageCalculatorPage({ params }: { params: { stat
   return (
     <article className="max-w-5xl mx-auto">
       <Breadcrumb items={[
-        { label: 'Calculators', href: '/calculators' },
+        { label: 'Calculators', href: '/' },
         { label: 'Mortgage Calculator', href: '/mortgage-calculator' },
         { label: `${stateData.name} Mortgage Calculator`, href: `/mortgage-calculator/${stateData.slug}` }
       ]} />

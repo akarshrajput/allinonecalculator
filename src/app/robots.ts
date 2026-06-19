@@ -6,14 +6,14 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/', '/_next/'],
+        disallow: ['/api/', '/admin/'],
       },
       {
         userAgent: 'Googlebot',
         allow: '/',
       },
     ],
-    sitemap: 'https://allinonecalculator.fun/sitemap.xml',
-    host: 'https://allinonecalculator.fun',
+    sitemap: 'https://www.allinonecalculator.fun/sitemap.xml',
+    host: 'https://www.allinonecalculator.fun',
   };
 }

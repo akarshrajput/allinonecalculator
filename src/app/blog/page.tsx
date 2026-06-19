@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Blog — Guides & Tips | CalculatorHub',
   description: 'Read our latest guides, tips, and tutorials on finance, health, and mathematics.',
   alternates: {
-    canonical: 'https://calculatorhub.com/blog'
+    canonical: 'https://www.allinonecalculator.fun/blog'
   }
 };
 

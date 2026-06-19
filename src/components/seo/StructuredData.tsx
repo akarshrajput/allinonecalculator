@@ -21,7 +21,7 @@ export function generateWebApplicationSchema(calc: any) {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": calc.title,
-    "url": `https://allinonecalculator.fun/${calc.slug}`,
+    "url": `https://www.allinonecalculator.fun/${calc.slug}`,
     "applicationCategory": "FinanceApplication", // Can be dynamic
     "operatingSystem": "Web Browser",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },

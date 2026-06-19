@@ -11,13 +11,13 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", weight:
 const dmMono = DM_Mono({ subsets: ["latin"], variable: "--font-dm-mono", weight: ["400", "500"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://allinonecalculator.fun"),
+  metadataBase: new URL("https://www.allinonecalculator.fun"),
   title: "Free Online Calculators — Finance, Health, Math & More | All In One Calculator",
   description: "Free online calculators for mortgage, BMI, loan, percentage, calories and more. Fast, accurate, no sign-up needed.",
   openGraph: {
     title: "All In One Calculator | Free Online Calculators",
     description: "Free online calculators for mortgage, BMI, loan, percentage, calories and more. Fast, accurate, no sign-up needed.",
-    url: "https://allinonecalculator.fun",
+    url: "https://www.allinonecalculator.fun",
     siteName: "All In One Calculator",
     type: "website",
   },
