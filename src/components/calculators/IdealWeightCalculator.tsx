@@ -125,6 +125,30 @@ export default function IdealWeightCalculator() {
           )}
         </div>
       </div>
+
+      {/* Advanced SEO Semantic Content Block */}
+      <div className="mt-12 pt-8 border-t border-border prose prose-sm max-w-none text-text-muted">
+        <h2 className="text-xl font-bold text-text-primary">Advanced Ideal Body Weight Insights</h2>
+        <p>
+          Determining your healthy target often requires more than just a quick guess; many professionals use an <strong>ideal body weight calculation formula</strong> or an <strong>adjusted ideal body weight calculator</strong> for precise medical dosing and health assessments. This tool acts as a comprehensive <strong>ideal and adjusted body weight calculator</strong> to help you <strong>calculate percent ideal body weight</strong>. While it functions as an excellent <strong>bmi visualizer</strong>, it is more tailored than a standard <strong>am i fat quiz</strong> or checking an <strong>underweight icd 10</strong> code.
+        </p>
+
+        <h3 className="text-lg font-bold text-text-primary mt-6">Common Medical and Fitness Targets</h3>
+        <p>
+          Athletes frequently use this to find their perfect race weight, searching for an <strong>ideal running weight calculator</strong> or <strong>ideal runner weight calculator</strong> to optimize performance. Parents might search for an <strong>ideal body weight calculation pediatrics</strong> tool, though this calculator is primarily designed for adults (for instance, finding <strong>healthy weights for 5'8 guys</strong>). (Note: If you're looking for an <strong>ideal weight for dog calculator</strong>, please consult a veterinarian as human formulas do not apply!)
+        </p>
+        <p>
+          Understanding the <strong>meaning weight</strong> has in relation to your height is crucial. Often, users want to convert their specific ideal weights between imperial and metric systems. We constantly see users calculating exact targets.
+        </p>
+
+        <h3 className="text-lg font-bold text-text-primary mt-6">Frequent Ideal Weight Target Conversions</h3>
+        <p>
+          Once you find your target, you might need to convert it. Common conversions from pounds to kilograms include finding out exactly what <strong>152 lb to kg</strong> (or <strong>152 pounds to kg</strong>) is, calculating <strong>153 lb to kg</strong> (or <strong>153 lbs in kg</strong>), and determining <strong>161 lbs kg</strong> (<strong>161 pounds to kg</strong>). Other frequent targets include <strong>166 lbs in kg</strong>, <strong>169 pounds in kg</strong>, <strong>183lbs in kg</strong>, and <strong>191 pounds in kg</strong>. For heavier frames, users often calculate <strong>195 lbs in kg</strong>, <strong>215 lbs in kilograms</strong>, <strong>227 lbs to kg</strong> (<strong>227 pounds in kg</strong>), and <strong>245 pounds to kg</strong>.
+        </p>
+        <p>
+          Conversely, many international users convert metric goals back to imperial, such as converting small amounts like <strong>5.8 kg to lbs</strong>, <strong>6.2 kg lbs</strong>, or <strong>27.5 kg lbs</strong> (<strong>27.5 pounds to kg</strong>). For adult targets, common conversions include <strong>65 pounds to us</strong> metrics, <strong>88.9 kg to lbs</strong>, <strong>158 kg to lbs</strong>, and <strong>222 kg to lbs</strong> (<strong>222lbs to kg</strong>).
+        </p>
+      </div>
     </div>
   );
 }

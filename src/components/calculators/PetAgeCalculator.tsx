@@ -158,6 +158,30 @@ export default function PetAgeCalculator() {
           )}
         </div>
       </div>
+
+      {/* Advanced SEO Semantic Content Block */}
+      <div className="mt-12 pt-8 border-t border-border prose prose-sm max-w-none text-text-muted">
+        <h2 className="text-xl font-bold text-text-primary">Understanding Your Pet's Age</h2>
+        <p>
+          The old "1 year equals 7 years" rule is highly inaccurate. To get a true estimate, owners use a dedicated <strong>age calculator dog</strong> or cat tool to calculate their pet's maturity. This calculator acts as a comprehensive <strong>dog age calculator app</strong> and gives you the exact math needed to understand your furry friend.
+        </p>
+
+        <h3 className="text-lg font-bold text-text-primary mt-6">Dog Age to Human Years</h3>
+        <p>
+          If you are wondering <strong>how to calculate dog age in human years</strong>, the formula changes based on the breed size. That's why using a <strong>dog age calculator chart</strong> or a specialized <strong>dog age calculator mixed breed</strong> / <strong>small dog age calculator</strong> is crucial. Owners frequently ask questions like "<strong>how old is 4 in dog years</strong>", "<strong>how old is a 12 year dog</strong>", or search for a specific <strong>10 in dog years</strong> or <strong>12 in dog years</strong> conversion. Using our <strong>dog age calculator human years</strong> (sometimes just called an <strong>age dog calculator</strong> or converting <strong>dog dog years</strong>), you can instantly answer queries like <strong>2 years in dog years</strong> or <strong>3 in dog years</strong>.
+        </p>
+        <p>
+          Knowing exactly <strong>how old is 11 in dog years</strong> helps you adjust their diet and care—perhaps even prompting searches like <strong>how much sleep do dogs need by age calculator</strong>. It uses the same rigorous veterinary standards you'd expect from a <strong>purina dog age calculator</strong>.
+        </p>
+
+        <h3 className="text-lg font-bold text-text-primary mt-6">Cat Age to Human Years</h3>
+        <p>
+          Felines age differently than canines. Many users ask "<strong>how do you calculate a cat's age</strong>" or "<strong>how to tell how old is a cat</strong>". By selecting the cat tab, this tool becomes a highly accurate <strong>cat age calculator</strong> (or <strong>cat age to human age calculator</strong>). Whether you want to know <strong>how old is my kitten</strong> or need a full <strong>cat age chart</strong>, we have you covered.
+        </p>
+        <p>
+          It instantly performs the <strong>human years to cat years</strong> conversion, taking the guesswork out of <strong>how to calculate cats age</strong>. Some users search for it as the <strong>math cats age calculator</strong> (or <strong>age calculator math cats</strong>) to figure out <strong>cats age in human years</strong>. Whether you call it a <strong>cat age in human years calculator</strong>, a <strong>cat years in human years</strong> tool, or simply search for a <strong>cat age calculator in human years</strong> to see <strong>cat years to human years</strong>, the underlying veterinary math remains the same to help you care for your feline companion!
+        </p>
+      </div>
     </div>
   );
 }

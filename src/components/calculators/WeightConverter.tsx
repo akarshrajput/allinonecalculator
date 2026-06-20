@@ -97,6 +97,20 @@ export default function WeightConverter() {
           </div>
         </div>
 
+        {/* Advanced SEO Semantic Content Block */}
+        <div className="mt-12 pt-8 border-t border-border prose prose-sm max-w-none text-text-muted">
+          <h2 className="text-xl font-bold text-text-primary">Common Weight Conversions</h2>
+          <p>
+            Whether you need to figure out exactly how much <strong>152 lb to kg</strong> is, or you're converting <strong>153 lbs in kg</strong> (or even <strong>153 lb to kg</strong>), our tool handles it instantly. Users frequently use this calculator to convert larger weights like <strong>191 pounds in kg</strong>, <strong>195 lbs in kg</strong>, <strong>215 lbs in kilograms</strong>, <strong>227 lbs to kg</strong> (or <strong>227 pounds in kg</strong>), <strong>245 pounds to kg</strong>, and <strong>246 lbs to kg</strong>.
+          </p>
+          <p>
+            You can also seamlessly convert metric weights back to imperial. For example, calculating <strong>27.5 kg lbs</strong> (or <strong>27.5 pounds to kg</strong> depending on your needs), finding what <strong>47.5 kilos pounds</strong> equals, or doing precise decimal conversions like <strong>54.5 kg to lbs</strong>, <strong>68.2 kg to lbs</strong>, <strong>88.9 kg to lbs</strong>, and even small amounts like <strong>6.2 kg lbs</strong>.
+          </p>
+          <p>
+            No matter if you're trying to find out what <strong>72 kg</strong> is in pounds, converting exactly <strong>152 pounds to kg</strong>, <strong>161 lbs kg</strong> (<strong>161 pounds to kg</strong>), <strong>166 lbs in kg</strong>, <strong>169 pounds in kg</strong>, or even larger conversions like <strong>222 kg to lbs</strong> and <strong>222lbs to kg</strong>, this tool provides instant, accurate results. For international users converting <strong>65 pounds to us</strong> metrics, simply select your desired output unit above.
+          </p>
+        </div>
+
       </div>
     </div>
   );
