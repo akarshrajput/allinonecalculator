@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/next";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["400", "500", "600"] });
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", weight: ["400", "500", "600", "700"] });
-const dmMono = DM_Mono({ subsets: ["latin"], variable: "--font-dm-mono", weight: ["400", "500"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.allinonecalculator.fun"),
@@ -43,6 +38,9 @@ export const metadata: Metadata = {
   verification: {
     google: "yLe-WpfZpxLpXPtqRUqEXG5KPIiGVR67G38sqNcPvug",
   },
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -51,15 +49,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dmSans.variable} ${dmMono.variable}`}>
+    <html lang="en">
       <head>
         {/* Adsense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXX"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+
         {/* Google Analytics */}
         <Script
           async
@@ -78,7 +71,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-24 w-full">
           {children}
         </main>
         <Footer />

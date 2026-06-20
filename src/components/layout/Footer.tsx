@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-1 space-y-4">
             <div className="flex items-center gap-3">
-              <img src="/logo.jpeg" alt="All In One Calculator Logo" className="w-8 h-8 rounded-lg object-contain" />
+              <img src="/logo.png" alt="All In One Calculator Logo" className="w-8 h-8 rounded-lg object-contain" />
               <span className="font-display font-bold text-xl text-gray-900 tracking-tight">All In One Calculator</span>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed">
